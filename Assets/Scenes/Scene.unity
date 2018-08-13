@@ -3632,7 +3632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -313}
+  m_AnchoredPosition: {x: -1, y: -306}
   m_SizeDelta: {x: 960, y: 59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &953167448
@@ -3647,7 +3647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.49019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.40392157}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7537,7 +7537,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "WASD      = Move\nSpace    = Enter / Exit\nE              = Cargo door\nMouse1
-    = Interact \nP              = Pause\nF1            = Tutorial"
+    = Interact \nP              = Pause\nF4            = Tutorial"
 --- !u!222 &1849130094
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8314,7 +8314,7 @@ MonoBehaviour:
   m_Text: '(ENTER TO RESTART)
 
 
-    (F1 FOR TUTORIAL)
+    (F4 FOR TUTORIAL)
 
 '
 --- !u!222 &2108502780

@@ -52,7 +52,7 @@ public class MouseController : MonoBehaviour {
         {
             bgImage.color = new Color(.5f, .5f, .5f, .5f); // DEFAULT
 
-
+            /*
             if (hit.collider.CompareTag("TrunkBlock"))
             {
                 itemDescription.text = "Open hatch with:";
@@ -69,6 +69,7 @@ public class MouseController : MonoBehaviour {
             {
                 Debug.Log("TruckHatch");
             }
+            */
             if (hit.collider.CompareTag("FixButton"))
             {
 

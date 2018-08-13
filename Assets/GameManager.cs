@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour {
         moneyCount.text = money.ToString();
         debrisGoneCount.text = debrisRemaining.ToString();
 
-        if (Input.GetKeyDown(KeyCode.F1))
+        if (Input.GetKeyDown(KeyCode.F4))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

@@ -46,17 +46,20 @@ public class DebrisSpawner : MonoBehaviour {
         float bonusSpeed = 0f;
         while (true)
         {
+ 
             float bonusChance = 0;
             int selectOne = Random.Range(0, debrises.Length); // Select random debris, all equal here
             GameObject selected = debrises[selectOne].gameObject;
             if (selected.GetComponent<Debris>().isMine)
             {
-                bonusChance = GameManager.instance.dayCount * 10; // Bonus chance for mines to spawn increase every day
+                bonusChance = GameManager.instance.dayCount * 20; // Bonus chance for mines to spawn increase every day
                 bonusSpeed = debrisSpeed*2f;
             }
             float baseChance = selected.GetComponent<Debris>().chanceToSpawn; // Check debris specific spawn chance
-            float chance = baseChance + bonusChance;
-            int probapility = Random.Range(0, 100); // Random probability
+
+
+            float chance = (baseChance + bonusChance) / debrises.Length;
+            float probapility = Random.Range(0f, 100f); // Random probability
             if (chance > probapility) // If debris specific spawn chance is greater than random prob, spawn it
             {
                 debrisType = selectOne;
