@@ -54,7 +54,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -103,7 +103,7 @@ MonoBehaviour:
   value: 250
   startForce: -2
   isMine: 0
-  chanceToSpawn: 1
+  chanceToSpawn: 3
   mineScript: {fileID: 0}
   inTrunk: 0
 --- !u!212 &212143333092603692

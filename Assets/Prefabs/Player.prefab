@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23c8c79fcc039047804e04c6e3a2eff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 50
+  moveSpeed: 70
   audioManager: {fileID: 0}
   playerOnTheHatch: 0
   exhaust: {fileID: 1475961514206004, guid: acfc0fb0839dd9443a0d4695ffa46220, type: 2}

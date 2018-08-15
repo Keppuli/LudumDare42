@@ -103,7 +103,7 @@ MonoBehaviour:
   value: 4990
   startForce: -2
   isMine: 0
-  chanceToSpawn: 0.5
+  chanceToSpawn: 1
   mineScript: {fileID: 0}
   inTrunk: 0
 --- !u!212 &212861083397627952

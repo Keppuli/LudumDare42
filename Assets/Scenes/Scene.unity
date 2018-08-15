@@ -343,7 +343,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hop out(space) and try pulling objects(mouse1).
+  m_Text: Hop out by pressing(Space) and try pulling objects(Mouse1).
 --- !u!222 &79984778
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -884,7 +884,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &252587327
 Transform:
   m_ObjectHideFlags: 0
@@ -2273,7 +2273,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1000
+  m_Mass: 2000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -2295,7 +2295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1000
   active: 1
-  doorOpen: 0
+  doorOpen: 1
   hatch: {fileID: 341248472}
   door: {fileID: 252587326}
   playerSpawn: {fileID: 2039682471}
@@ -3225,11 +3225,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.2480016
+      value: -1.57
       objectReference: {fileID: 0}
     - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.2762563
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3237,23 +3237,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.91916966
       objectReference: {fileID: 0}
     - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.39386177
       objectReference: {fileID: 0}
     - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -133.61
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
@@ -3632,7 +3636,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -306}
+  m_AnchoredPosition: {x: -1, y: -309.06}
   m_SizeDelta: {x: 960, y: 59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &953167448
@@ -3647,7 +3651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.40392157}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.21568628}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5884,11 +5888,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4788907098985490, guid: 9b5147644e1ffa5478f65e944832cc5f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.2654736
+      value: -5.46
       objectReference: {fileID: 0}
     - target: {fileID: 4788907098985490, guid: 9b5147644e1ffa5478f65e944832cc5f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.57841486
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 4788907098985490, guid: 9b5147644e1ffa5478f65e944832cc5f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7075,6 +7079,11 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 114117300107632310, guid: fc772612c2c1bd84789dcea241c6ee3a,
+        type: 2}
+      propertyPath: m_Text
+      value: Push useless junk out of orbit and collect the valuable ones.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc772612c2c1bd84789dcea241c6ee3a, type: 2}
   m_IsPrefabAsset: 0
@@ -8357,7 +8366,7 @@ MonoBehaviour:
   interactionDistance: 2
   playerWaitTime: 0.5
   playerWaitTimer: 0
-  tractorBeamStrength: 1
+  tractorBeamStrength: 4
   dockSuctionstrength: 1
   dayCount: 0
   dayTime: 60
@@ -8622,7 +8631,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: With your cargo door open (E) practice docking on the port here.
+  m_Text: Open cargo door by pressing (E) and dock on the port here.
 --- !u!222 &2129051548
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8708,11 +8717,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4788907098985490, guid: 9b5147644e1ffa5478f65e944832cc5f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.3
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4788907098985490, guid: 9b5147644e1ffa5478f65e944832cc5f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.94
+      value: -1.28
       objectReference: {fileID: 0}
     - target: {fileID: 4788907098985490, guid: 9b5147644e1ffa5478f65e944832cc5f, type: 2}
       propertyPath: m_LocalPosition.z
