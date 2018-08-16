@@ -343,7 +343,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hop out by pressing(Space) and try pulling objects(Mouse1).
+  m_Text: Hop out by pressing(Space) and try pulling debris (Mouse1).
 --- !u!222 &79984778
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -859,7 +859,7 @@ SpriteRenderer:
   m_SortingOrder: 26
   m_Sprite: {fileID: 21300000, guid: efdb323c5e8f6744797ed07848141589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.22, y: 0.28}
@@ -1165,7 +1165,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 116.1, y: 33.4}
+  m_AnchoredPosition: {x: 116.1, y: 33.79}
   m_SizeDelta: {x: 160, y: 85.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &307692524
@@ -1200,7 +1200,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Take this old truck and start cleaning this mess.
+  m_Text: Be careful not to drive yourself into the atmosphere!
 --- !u!222 &307692525
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1628,6 +1628,7 @@ Transform:
   - {fileID: 1042744928}
   - {fileID: 1935528265}
   - {fileID: 1038378291}
+  - {fileID: 525496083}
   m_Father: {fileID: 1843267833}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1916,6 +1917,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &525496083 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916,
+    type: 2}
+  m_PrefabInternal: {fileID: 1296860124}
 --- !u!1 &547616236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2273,7 +2279,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2000
+  m_Mass: 1000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -2532,7 +2538,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &613795800
 Transform:
   m_ObjectHideFlags: 0
@@ -3671,7 +3677,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: (ATHMOSPHERE)
+  m_Text: (ATMOSPHERE)
 --- !u!222 &953167449
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4242,7 +4248,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1072777554}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.84, y: -2.69, z: 0}
+  m_LocalPosition: {x: -0.17, y: -2.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 248163704}
@@ -5355,6 +5361,64 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1242395604}
   m_CullTransparentMesh: 0
+--- !u!1001 &1296860124
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 430827651}
+    m_Modifications:
+    - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.94997215
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.31233475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -216.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.9999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546469840725022, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.9999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837414056144034, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
+      propertyPath: m_Name
+      value: Debris_scrapLong (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d7dc02c416b0a884ab6553eb750b2916, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1303945185
 GameObject:
   m_ObjectHideFlags: 0
@@ -5944,7 +6008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1511552577
 Transform:
   m_ObjectHideFlags: 0
@@ -6432,7 +6496,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1539479900}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.04, y: -1.94, z: 0}
+  m_LocalPosition: {x: -8.04, y: -2.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 548200971}
@@ -6750,7 +6814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1647350010
 Transform:
   m_ObjectHideFlags: 0
@@ -8320,10 +8384,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '(ENTER TO RESTART)
+  m_Text: '(F4 TO GO BACK TO TUTORIAL)
 
 
-    (F4 FOR TUTORIAL)
+    (ENTER TO START THE GAME)
 
 '
 --- !u!222 &2108502780
@@ -8366,7 +8430,7 @@ MonoBehaviour:
   interactionDistance: 2
   playerWaitTime: 0.5
   playerWaitTimer: 0
-  tractorBeamStrength: 4
+  tractorBeamStrength: 8
   dockSuctionstrength: 1
   dayCount: 0
   dayTime: 60
